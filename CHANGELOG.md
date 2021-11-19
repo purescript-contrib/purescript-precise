@@ -11,6 +11,7 @@ New features:
 Bugfixes:
 
 Other improvements:
+- Added `purs-tidy` formatter (#12 by @thomashoneyman)
 
 ## [v5.1.0](https://github.com/purescript-contrib/purescript-precise/releases/tag/v5.1.0) - 2021-05-06
 
