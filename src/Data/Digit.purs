@@ -1,8 +1,19 @@
 module Data.Digit
   ( Digit
-  , fromInt , toInt
-  , fromChar , toChar
-  , _zero, _one, _two, _three, _four, _five, _six, _seven, _eight, _nine
+  , fromInt
+  , toInt
+  , fromChar
+  , toChar
+  , _zero
+  , _one
+  , _two
+  , _three
+  , _four
+  , _five
+  , _six
+  , _seven
+  , _eight
+  , _nine
   ) where
 
 import Prelude
@@ -30,10 +41,12 @@ toInt :: Digit -> Int
 toInt (Digit c) = c
 
 fromChar :: Char -> Maybe Digit
-fromChar c = let code = toCharCode c
-              in if code >= 48 && code <= 57
-                    then Just (Digit $ code - 48)
-                    else Nothing
+fromChar c =
+  let
+    code = toCharCode c
+  in
+    if code >= 48 && code <= 57 then Just (Digit $ code - 48)
+    else Nothing
 
 toChar :: Digit -> Char
 toChar (Digit c) = unsafePartial $ fromJust $ fromCharCode (c + 48)

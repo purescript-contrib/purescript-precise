@@ -3,7 +3,7 @@ module Data.HugeInt.Gen where
 import Prelude
 
 import Control.Monad.Gen as Gen
-import Data.HugeInt ( HugeInt )
+import Data.HugeInt (HugeInt)
 import Data.HugeInt as HugeInt
 
 genHugeInt :: forall m. Gen.MonadGen m => m HugeInt

@@ -56,8 +56,9 @@ toHugeNum (HugeInt h) = h
 
 -- | Requires the input to have a zero-valued fractional component.
 fromHugeNum :: HugeNum -> Maybe HugeInt
-fromHugeNum h | HN.integerPart h == h = pure $ HugeInt h
-              | otherwise = Nothing
+fromHugeNum h
+  | HN.integerPart h == h = pure $ HugeInt h
+  | otherwise = Nothing
 
 -- | Input must look like a Purescript `Int`.
 -- | For example, `fromString "123456789012345" => Just (HugeInt 123456789012345)`.
@@ -96,14 +97,14 @@ isNegative (HugeInt h) = HN.isNegative h
 numOfDigits :: HugeInt -> Int
 numOfDigits (HugeInt h) = HN.numOfIntegral h
 
-even :: HugeInt-> Boolean
+even :: HugeInt -> Boolean
 even h = case drop (length (show h) - 1) (show h) of
-              "0" -> true
-              "2" -> true
-              "4" -> true
-              "6" -> true
-              "8" -> true
-              _ -> false
+  "0" -> true
+  "2" -> true
+  "4" -> true
+  "6" -> true
+  "8" -> true
+  _ -> false
 
 odd :: HugeInt -> Boolean
 odd = not <<< even
