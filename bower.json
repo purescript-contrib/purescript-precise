@@ -12,19 +12,19 @@
     "url": "https://github.com/purescript-contrib/purescript-precise.git"
   },
   "dependencies": {
-    "purescript-arrays": "^6.0.0",
-    "purescript-console": "^5.0.0",
-    "purescript-effect": "^3.0.0",
-    "purescript-exceptions": "^5.0.0",
-    "purescript-gen": "^3.0.0",
-    "purescript-integers": "^5.0.0",
-    "purescript-lists": "^6.0.0",
-    "purescript-numbers": "^8.0.0",
-    "purescript-prelude": "^5.0.0",
-    "purescript-strings": "^5.0.0"
+    "purescript-arrays": "master",
+    "purescript-console": "master",
+    "purescript-effect": "master",
+    "purescript-exceptions": "master",
+    "purescript-gen": "master",
+    "purescript-integers": "master",
+    "purescript-lists": "master",
+    "purescript-numbers": "master",
+    "purescript-prelude": "master",
+    "purescript-strings": "master"
   },
   "devDependencies": {
-    "purescript-quickcheck": "^7.0.0",
-    "purescript-quickcheck-laws": "^6.0.0"
+    "purescript-quickcheck": "master",
+    "purescript-quickcheck-laws": "main"
   }
 }
