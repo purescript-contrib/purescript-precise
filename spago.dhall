@@ -11,7 +11,6 @@
   , "numbers"
   , "partial"
   , "prelude"
-  , "psci-support"
   , "quickcheck"
   , "quickcheck-laws"
   , "strings"
