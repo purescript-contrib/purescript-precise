@@ -12,6 +12,11 @@ Bugfixes:
 
 Other improvements:
 
+## [v6.0.1](https://github.com/purescript-contrib/purescript-precise/releases/tag/v6.0.1) - 2026-10-11
+
+Other improvements:
+- Migrate to registry-backed Spago 1.0, preserving published dependency ranges, and update repository tooling and CI actions (#33 by @thomashoneyman).
+
 ## [v6.0.0](https://github.com/purescript-contrib/purescript-precise/releases/tag/v6.0.0) - 2022-04-27
 
 Breaking changes:
